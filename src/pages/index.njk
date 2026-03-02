@@ -1,0 +1,48 @@
+---
+layout: base
+permalink: /index.html
+title: 'ideep.cc'
+description: '记录 AI 探索与实践的个人站点'
+blog:
+  title: '最新文章'
+  intro: ""
+---
+
+<div class="wrapper">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div class="section__inner flow region">
+      <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
+    </div>
+    {% svg "divider/waves", null, "divider" %}
+  </header>
+
+  <article class="full | region">
+    <div class="prose wrapper flow">
+      <h2 id="hi">你好，我是 七小宝</h2>
+      <p>
+        这里是 ideep.cc，记录我在 AI、技术和产品方面的探索与思考。
+      </p>
+      <p>
+      欢迎浏览博客，也欢迎通过 <a href="https://github.com/buguo715">GitHub</a> 联系我。
+      </p>
+    </div>
+  </article>
+
+  <section class="full | region">
+    <div class="prose wrapper flow">
+      <h2>{{ blog.title }}</h2>
+      {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %}
+      <div class="feature |  region region-space-l">
+        <custom-masonry layout="50-50">
+          {% set itemList = collections.allPosts %}
+					{% asyncEach item in itemList.slice(0, 4) %}
+            {% set headingLevel = "h3" %}
+						{% include "partials/card-blog.njk" %}
+					{% endeach %}
+        </custom-masonry>
+      </div>
+    </div>
+  </section>
+</div>
