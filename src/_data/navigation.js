@@ -19,7 +19,7 @@ export default {
     //   url: '/styleguide/'
     // },
     {
-      text: '备案信息',
+      text: '联系我们',
       url: '/imprint/'
     }
     // ,
