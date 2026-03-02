@@ -1,13 +1,13 @@
 ---
-title: Legal notice
+title: 法律声明
 discover:
-  title: Legal notice
+  title: 法律声明
 permalink: /imprint/index.html
 description: Imprint infos
 layout: page
 ---
 
-Edit your details in `_data/personal.yaml`
+[//]: # (Edit your details in `_data/personal.yaml`)
 
 {{ personal.address }}
 {{ personal.email }}
