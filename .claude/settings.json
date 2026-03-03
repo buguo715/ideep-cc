@@ -1,0 +1,13 @@
+{
+  "Stop": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "Before stopping, verify the task is complete: (1) All code changes made? (2) Eleventy build passed (npm run verify-build)? (3) Staged changes committed? Return 'approve' if all complete, or 'block' with reason if something needs fixing."
+        }
+      ]
+    }
+  ]
+}
