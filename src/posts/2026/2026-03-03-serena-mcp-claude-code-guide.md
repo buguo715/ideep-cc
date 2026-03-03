@@ -2,7 +2,7 @@
 title: "Claude Code 装上 Serena，才算真正会用 AI 写代码"
 description: "一份写给 AI Vibe Coding 从业者的 Serena MCP 安装使用手册，附对比数据和完整配置流程"
 date: 2026-03-03
-tags: ["AI", "Claude Code", "MCP", "Vibe Coding", "开发工具"]
+tags: ["AI", "claude-code", "mcp", "Vibe Coding", "开发工具"]
 ---
 
 大家好，今天我要介绍一个工具——**Serena**。
