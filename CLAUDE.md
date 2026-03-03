@@ -68,6 +68,22 @@ The project follows [CUBE CSS](https://web-cube.dev/) methodology:
 
 Copy `.env-sample` to `.env` and set `URL` for local development.
 
+## Layout System
+
+- Inheritance chain: `base.njk` → `page.njk` / `post.njk` / `tags.njk`
+- WebC components: `src/_includes/webc/` (custom-card, custom-masonry, custom-youtube, custom-svg, etc.)
+
+## Collections
+
+- `allPosts` — all blog posts, reversed chronologically
+- `showInSitemap` — all .md/.njk pages for sitemap
+- `tagList` — all unique tags (excluding 'posts', 'docs', 'all')
+
+## Gotchas
+
+- After adding new posts/pages, run `npm run clean` then `npm start` to avoid Eleventy collection cache issues
+- Design tokens in `src/_data/designTokens/*.json` → auto-converted to Tailwind config via `src/_config/utils/tokens-to-tailwind.js`
+
 ## Deployment
 
 The site deploys via GitHub Actions (`.github/workflows/deploy.yml`) to an SSH-accessible server at `/var/www/ideep.cc`.
